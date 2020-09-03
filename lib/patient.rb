@@ -18,6 +18,8 @@ class Patient
   end
 
   def appointments
-
+    Appointment.all.select do |patient|
+      patient.date
+    end
   end
 end
