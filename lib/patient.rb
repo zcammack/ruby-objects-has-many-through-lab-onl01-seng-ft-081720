@@ -18,8 +18,8 @@ class Patient
   end
 
   def appointments
-    appointments.collect do |appointment|
-      appointment.date
+    Appointment.all.select do |patient|
+      patient.date = self
     end
   end
 end
