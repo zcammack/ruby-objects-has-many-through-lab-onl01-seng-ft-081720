@@ -18,4 +18,8 @@ class Artist
       song.artist == self
     end
   end
+
+  def new_song(name, genre)
+    
+  end
 end
